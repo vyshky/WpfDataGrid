@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        mc:Ignorable="d"
+        Title="DataGrid" Height="418" Width="700">
+    <StackPanel x:Name="stackPanel">
+        <DockPanel Height="50" LastChildFill="False">
+            <Button x:Name="add" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="20" Cursor="Pen" Padding="10,1,10,1" Click="add_Click"/>
+            <Button x:Name="delete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="20" Padding="10,1,10,1" Click="delete_Click" />
+        </DockPanel>
+
+        <Grid Background="Aqua">
+            <DataGrid x:Name="usersGrid" SelectionMode="Extended" SelectionChanged="usersGrid_SelectionChanged"/>
+        </Grid>
+    </StackPanel>
+
+</Window>
